@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --primary-magenta: hsl(300, 43%, 22%);
+    --primary-pink: hsl(333, 80%, 67%);
+    --secondary-d-magenta: hsl(303, 10%, 53%);
+    --secondary-l-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    padding: 4rem 1rem;
+    font-size: 0.938rem;
+    font-family: 'Spartan', sans-serif;
+    background: url("../images/bg-pattern-top-desktop.svg") top left, url("../images/bg-pattern-bottom-mobile.svg") bottom right;
+    background-repeat: no-repeat;
+}
+
+.information {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.information h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-magenta);
+}
+
+.information p {
+    line-height: 28px;
+    color: var(--secondary-d-magenta);
+}
+
+.rates {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+    flex-direction: column;
+}
+
+.rates > div {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    background-color: var(--secondary-l-magenta);
+}
+
+.rates p {
+    margin: 0;
+    font-weight: 700;
+    padding-top: 1rem;
+    color: var(--primary-magenta);
+}
+
+.comments {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    gap: 2rem;
+    display: flex;
+    padding: 2rem 1rem;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: var(--primary-magenta);
+}
+
+.card p {
+    margin: 0;
+    line-height: 28px;
+    color: var(--white);
+}
+
+.user {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.user em {
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-pink);
+}
+
+.attribution  {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 0.688rem;
+}
+
+.attribution a {
+    font-weight: 500;
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
