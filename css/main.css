@@ -6,9 +6,11 @@
     --secondary-d-magenta: hsl(303, 10%, 53%);
     --secondary-l-magenta: hsl(300, 24%, 96%);
     --white: hsl(0, 0%, 100%);
+    --links: hsl(228, 45%, 44%);
 }
 
 body {
+    position: relative;
     padding: 4rem 1rem;
     font-size: 0.938rem;
     box-sizing: border-box;
@@ -108,23 +110,27 @@ body {
 }
 
 .attribution  {
+    left: 0;
     bottom: 0;
+    width: 100%;
+    display: flex;
     position: absolute;
     text-align: center;
     font-size: 0.688rem;
+    justify-content: center;
 }
 
 .attribution a {
     font-weight: 500;
+    color: var(--links);
     text-decoration: none;
-    color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 48em) {
     body {
+        padding: 4%;
         width: 100vw;
         display: flex;
-        padding: 5% 4%;
         min-height: 100vh;
         align-items: center;
         flex-direction: column;
@@ -168,6 +174,12 @@ body {
 
     .card:nth-child(3) {
         margin-top: 4rem;
+    }
+
+    .attribution  {
+        padding: 0 1rem;
+        box-sizing: border-box;
+        justify-content: flex-start;
     }
 }
 
